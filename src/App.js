@@ -4,13 +4,13 @@ import HomePage from "./pages/HomePage/HomePage";
 import AllPostsPage from "./pages/AllPostsPage/AllPostsPage";
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState(true);
+  const [isOnHomePage, setisOnHomePage] = useState(true);
 
   return (
     <>
-      {currentPage ? <HomePage /> : <AllPostsPage />}
-      <button onClick={() => setCurrentPage(!currentPage)}>Promeni Page</button>
-      {console.log(currentPage)}
+      {isOnHomePage ? <HomePage /> : <AllPostsPage />}
+      <button onClick={() => setisOnHomePage(!isOnHomePage)}>Promeni Page</button>
+      {console.log(isOnHomePage)}
     </>
   );
 };

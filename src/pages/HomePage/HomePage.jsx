@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./HomePage.css";
-import Button from "../../components/Button/Button";
+// import Button from "../../components/Button/Button";
 
 const HomePage = () => {
   let [counter, setCounter] = useState(0);

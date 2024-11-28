@@ -1,17 +1,17 @@
 import { useState } from "react";
 import "./HomePage.css";
-import Button from "../../components/Button/Button";
+// import Button from "../../components/Button/Button";
 
 const HomePage = () => {
   let [counter, setCounter] = useState(0);
 
   const incrementCounter = () => {
     setCounter(counter++);
-  }
+  };
 
   const decrementCounter = () => {
     setCounter(counter--);
-  }
+  };
 
   return (
     <div className="home-page">
@@ -19,7 +19,6 @@ const HomePage = () => {
       <h1>{counter}</h1>
       <button onClick={incrementCounter}>Increment</button>
       <button onClick={decrementCounter}>Decrement</button>
-
 
       {/* POSLE */}
       {/* <Button naslov="Increment" handle={handleIncrement} />
